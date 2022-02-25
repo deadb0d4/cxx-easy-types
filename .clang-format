@@ -1,0 +1,12 @@
+BasedOnStyle: Google
+---
+Language: Cpp
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: false
+DerivePointerAlignment: false
+PointerAlignment: Left
+SortIncludes: false
+BinPackArguments: false
+BinPackParameters: false
+ExperimentalAutoDetectBinPacking: false
+AllowAllParametersOfDeclarationOnNextLine: false
