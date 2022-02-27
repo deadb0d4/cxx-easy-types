@@ -1,10 +1,13 @@
+# Roadmap
+
 - [x] optionals
 - [x] jinja
 - [x] enums
-- [ ] inheritance & merges
-- [ ] serializers, deserializers
+- [ ] variants
+- [ ] additional properties
+- [ ] inheritance
+- [ ] composites
+- [ ] json
 - [ ] cmake
 - [ ] tests
-- [ ] additional properties
-- [ ] variants
 - [ ] randomizers
