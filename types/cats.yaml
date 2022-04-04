@@ -1,0 +1,13 @@
+namespace: pets.cats
+types:
+    Breed:
+        enum:
+          - russian
+          - english
+
+    Cat:
+        structure: {
+            "name": "str",
+            "age": "int",
+            "breed?": "Breed"
+        }

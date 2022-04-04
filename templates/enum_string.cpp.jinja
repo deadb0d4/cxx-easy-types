@@ -1,0 +1,22 @@
+#include <{{ cpp.enum_string_header_file(t) }}>
+
+namespace {{ cpp.namespace(t) }} {
+
+std::string ToString({{t.name}} value) {
+    switch (value) {
+        {% for v in t.values -%}
+        case {{ t.name }}::{{ cpp.enum_value(v) }}: return "{{ v }}";
+        {% endfor -%}
+    }
+}
+
+{{t.name}} FromString(const std::string& str) {
+    {% for v in t.values -%}
+    if (str == "{{ v }}") {
+        return {{ t.name }}::{{ cpp.enum_value(v) }};
+    }
+    {% endfor -%}
+    throw std::runtime_error(str + " is not in {{ t.name }}");
+}
+
+} // namespace {{ cpp.namespace(t) }}

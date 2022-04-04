@@ -1,0 +1,12 @@
+#pragma once
+
+#include <string>
+#include <{{ cpp.definition_file(t) }}>
+
+namespace {{ cpp.namespace(t) }} {
+
+std::string ToString({{t.name}} value);
+
+{{t.name}} FromString(const std::string& str);
+
+} // namespace {{ cpp.namespace(t) }}

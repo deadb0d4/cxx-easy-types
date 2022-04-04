@@ -1,0 +1,20 @@
+namespace: pony
+types:
+    MyLittlePony:
+        structure: {
+            "name": "str",
+            "friends": ["str"]
+        }
+
+    MyBiggerPony:
+        structure: {
+            "name": "str",
+            "friends?": ["MyLittlePony"],
+            "magic_spell": "magic.Spell",
+            "likes": [
+                {
+                    "kind": "str",
+                    "rate": "int"
+                }
+            ]
+        }

@@ -1,0 +1,11 @@
+#pragma once
+
+{% for e in cpp.includes(t) -%}
+#include <{{ e }}>
+{% endfor %}
+
+namespace {{ cpp.namespace(t) }} {
+
+using {{ t.name }} = std::vector<{{cpp.typename(t.item)}}>;
+
+}

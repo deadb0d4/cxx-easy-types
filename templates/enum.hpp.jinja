@@ -1,0 +1,11 @@
+#pragma once
+
+namespace {{ cpp.namespace(t) }} {
+
+enum class {{ t.name }} {
+    {% for v in t.values -%}
+        {{ cpp.enum_value(v) }},
+    {% endfor -%}
+};
+
+} // namespace {{ cpp.namespace(t) }}

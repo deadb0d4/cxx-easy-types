@@ -1,0 +1,16 @@
+namespace: magic
+types:
+    Spell:
+        structure: {
+            "incantation": "str",
+            "manacost": "int",
+            "source?": "lore.books.Book"
+        }
+
+    School:
+        enum: [
+            "light",
+            "dark",
+            "elemental",
+            "enchant"
+        ]

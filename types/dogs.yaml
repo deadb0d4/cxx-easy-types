@@ -1,0 +1,13 @@
+namespace: pets.dogs
+types:
+    Breed:
+        enum:
+          - corgi
+          - malamute
+
+    Dog:
+        structure: {
+            "name": "str",
+            "age": "int",
+            "breed?": "Breed"
+        }
