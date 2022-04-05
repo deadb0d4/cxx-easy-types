@@ -3,10 +3,9 @@
 - [x] optionals
 - [x] jinja
 - [x] enums
-- [ ] variants
+- [ ] variants (rule-based)
 - [ ] additional properties
-- [ ] inheritance
-- [ ] composites
+- [ ] composites (syntax for merging fields, and setting them from)
 - [ ] json
 - [ ] cmake
 - [ ] tests
